@@ -46,6 +46,7 @@
 
 .container {
   overflow: hidden;
+  min-width: 30vw;
 
   &.rotated {
     width: 100%;

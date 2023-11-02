@@ -97,6 +97,13 @@ class App extends Component {
     );
   }
 
+  /**
+   * todo 主页面，主要标注区域
+   * @param root
+   * @param as
+   * @returns {JSX.Element}
+   * @private
+   */
   _renderUI(root, as) {
     return (
       <>

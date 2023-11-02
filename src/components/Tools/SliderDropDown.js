@@ -17,9 +17,11 @@ export default observer(
               value={this.props.value}
               min={0}
               vertical
-              tipFormatter={null}
               style={{ height: this.props.height || 100 }}
               onChange={this.props.onChange}
+              tooltip={{
+                formatter: null,
+              }}
             />
             <Button
               shape="circle"
@@ -35,7 +37,7 @@ export default observer(
 
       return (
         <Fragment>
-          <Dropdown overlay={menu}>
+          <Dropdown menu={menu}>
             <Button shape="circle" className={styles.button}>
               {this.props.icon}
             </Button>

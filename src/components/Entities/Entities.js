@@ -72,7 +72,7 @@ export default observer(({
         <Elem name="header">
           <Space spread align={regionStore.view === "regions" ? null : "end"}>
             {regionStore.view === "regions"  && (
-              <Dropdown overlay={<SortMenu regionStore={regionStore}/>} placement="bottomLeft">
+              <Dropdown menu={<SortMenu regionStore={regionStore}/>} placement="bottomLeft">
                 <Elem name="sort" onClick={e => e.preventDefault()}>
                   <Elem name="sort-icon"><SortMenuIcon sortKey={regionStore.sort}/></Elem> {`Sorted by ${regionStore.sort[0].toUpperCase()}${regionStore.sort.slice(1)}`}
                 </Elem>

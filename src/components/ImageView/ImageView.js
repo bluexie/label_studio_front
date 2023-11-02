@@ -427,6 +427,14 @@ export default observer(
 
       this.updateCrosshair(e);
 
+      /**
+       * e.evt.buttons :
+       *    noMouseClick=0,
+       *    leftMouseClick=1,
+       *    rightMouseClick=2,
+       *    middleMouseClick=4
+       * @type {*|boolean}
+       */
       const isMouseWheelClick = e.evt && e.evt.buttons === 4;
       const isShiftDrag = e.evt && e.evt.buttons === 1 && e.evt.shiftKey;
 
