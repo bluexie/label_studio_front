@@ -10,6 +10,9 @@ Frontend, as its name suggests, is the frontend library developed using React an
 
 <br/>
 
+## Node Version
+must V14
+
 ## Install
 
 ```bash
